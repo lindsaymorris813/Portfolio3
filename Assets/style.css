@@ -1,0 +1,62 @@
+#portfolio-image {
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+#placeholder {
+    margin-bottom: 20px;
+}
+
+#personal-photo {
+    width: 300px;
+    float: left;
+}
+
+a {
+    color:white; 
+}
+
+#about-me-container {
+    width: 65%;
+    height: 100vh;
+}
+
+#contact-container {
+    width: 65%;
+    height: 100vh;
+}
+
+#portfolio-container {
+    width: 65%;
+
+}
+
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    font-family:sans-serif;
+    color: #393e46;
+  }
+
+  #modal-image {
+      width: 100%;
+      height: 100%;
+  }
+
+  img {
+      margin-bottom: 20px;
+  }
+
+  .media-center {
+      width: 350px;
+      height: 350px;
+  }
+
+  .media {
+      width: 350px;
+      height: 350px;
+  }
+
+  .modal-link {
+      color: #363636;
+  }

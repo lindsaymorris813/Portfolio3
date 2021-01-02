@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindsay Morris's Portfolio</title>
+    <!--Reset CSS Stylesheet-->
+    <link rel="stylesheet" href="Assets/reset.css">
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Bootswatch Stylesheet-->
+    <link rel="stylesheet" href="Assets/bootstrap.css">
+    <!--Personal Stylesheet-->
+    <link rel="stylesheet" href="Assets/style.css">
+    <!--Javascript Boostrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/14c899f3d3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Lindsay Morris</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- links on navbar-->
+        <div class="ml-auto collapse navbar-collapse" id="navbarColor02">
+            <div class="ml-auto navbar-nav">
+                <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+    </nav>
+    <!--Portfolio section-->
+    <section class="ml-3 mt-3" id="portfolio-container">
+        <div class="jumbotron">
+            <h1 class="display-4">Portfolio</h1>
+        </div>
+        <!--Portfolio Images-->
+        <section class="row mt-2">
+            <div class="col-md-6">
+                <div class="media center">
+                    <img src="Assets/Images/fuelFinder.png" class="portfolio-image mx-auto img-fluid" id="portfolio1"
+                        data-project="project-1" alt="Screenshot of Alternative Fuel Finder App">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <img src="Assets/Images/dashboard.png" class="portfolio-image mx-auto img-fluid" id="portfolio2"
+                    data-project="prodPlanner" alt="Productivity Planner">
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md-6">
+                <div class="media">
+                    <img src="Assets/Images/burgers.png" class="portfolio-image mx-auto img-fluid"
+                        alt="Screenshot of Burger App" data-project="burgerApp" id="portfolio3">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <img src="Assets/Images/workDayScheduler.png" class="portfolio-image mx-auto img-fluid"
+                        alt="Screenshot of WorkDay Scheduler Web App" data-project="work-scheduler" id="portfolio4">
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md-6">
+                <div class="media center">
+                    <img src="Assets/Images/weather.png" class="portfolio-image mx-auto img-fluid" id="portfolio5"
+                        data-project="weather-app" alt="Screenshot of OpenWeather API App">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <img src="Assets/Images/350.png" class="mx-auto img-fluid" alt="Placeholder image" id="portfolio6">
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!--footer-->
+    <footer class="navbar-nav footer bg-dark mt-5 p-4">
+        <div class="row ml-auto">
+            <!--github icon and link-->
+            <div class="ml-auto m-3">
+                <a href="http://lindsaymorris813.github.io/" target="_blank" class="fab fa-github-square fa-2x"></i></a>
+            </div>
+            <!--linked in icon and link-->
+            <div class="ml-auto m-3">
+                <a href="http://www.linkedin.com/in/lindsaymorris813" target="_blank"
+                    class="fab fa-linkedin-in fa-2x"></i></a>
+            </div>
+            <!--instagram icon and link-->
+            <div class="ml-auto m-3">
+                <a href="http://www.instagram.com/ughhhhstop" target="_blank"><i
+                        class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!--Modal for portfolio images-->
+    <div class="modal fade d-none" id="project-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h2 text-center">Alternative Fuel Finder App Project</h5>
+                    <button type="button" class="close" data-project="project-1" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body h5">
+                    <img class="img-responsive" src="Assets/Images/fuelFinder.png" id="modal-image" style="height: auto;">
+                    <p class="h3"><u>Usage:</u></p>
+                    <p>A web App using multiple API's to generate data on local electric charging stations and
+                        alternative biofuel options based on a users current location. Upon entering your preferences
+                        and location,
+                        a modal will pop up displaying a map with markers of locations meeting that criteria, as well as
+                        a list
+                        of all locations and relavent information.</p>
+                    <p class="h3"><u>Technologies Used:</u></p>
+                    <li>Bulma</li>
+                    <li>NREL.gov API</li>
+                    <li>Google Maps API</li>
+                    <li>JQuery</li>
+                    <p class="h3"><u>Contributors:</u></p>
+                        <li><a href="https://github.com/lindsaymorris813" class="modal-link">Lindsay Morris</a></li>
+                        <li><a href="https://github.com/grantf12" class="modal-link">Grant Ferment</a></li>
+                        <li><a href="https://github.com/Leedubla" class="modal-link">Lucas Winslow</a></li>
+                        <li><a href="https://github.com/Mrcaspento" class="modal-link">Matthew Caspento</a></li>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-project="project-1" id="closeBtn" class="closeBtn btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                    <a href="https://grantf12.github.io/Alternative_Fuel_Finder/" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Deployed Site</a>
+                        <a href="https://github.com/grantf12/Alternative_Fuel_Finder" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Git Hub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade d-none" id="prodPlanner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h2 text-center">Productivity Planner Project</h5>
+                    <button type="button" class="close" data-project="prodPlanner" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body h5">
+                    <img class="img-responsive" src="Assets/Images/dashboard.png" id="modal-image" style="height: auto;">
+                        <p class="h3"><u>Usage:</u></p>
+                        <p>The Productivity Planner provides users with the option to list their goals, plan their days with an hourly and daily calendar, track their progress, take notes, and view and share their progress with other users in their community. All of this is done using a SQL database. The planner also has some encouraging quotes and an aestheticly pleasing color scheme to help the user feel confident and focused on being productive.</p>
+                        <p class="h3"><u>Technologies Used:</u></p>
+                        <li>Bootstrap</li>
+                        <li>Express</li>
+                        <li>Handlebars</li>
+                        <li>Luxon</li>
+                        <li>Passport</li>
+                        <li>ESLint</li>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-project="prodPlanner" id="closeBtn" class="closeBtn btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                    <a href="https://obscure-lake-47661.herokuapp.com" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Deployed Site</a>
+                        <a href="https://github.com/averyjbrown2/Project-2" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Git Hub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade d-none" id="burgerApp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h2 text-center">Burger Order App</h5>
+                    <button type="button" class="close" data-project="burgerApp" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body h5">
+                    <img class="img-responsive" src="Assets/Images/burgers.png" id="modal-image" style="height: auto">
+                        <p class="h3"><u>Usage:</u></p>
+                        <p>An order logger with MySQL, Node, Express, Handlebars and a homemade ORM. Follows the MVC design pattern; uses Node and MySQL to query and route data in your app, and Handlebars to generate HTML</p>
+                        <p class="h3"><u>Technologies Used:</u></p>
+                        <li>MySQL</li>
+                        <li>Express</li>
+                        <li>Handlebars</li>
+                        <li>Node</li>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-project="burgerApp" id="closeBtn" class="closeBtn btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                    <a href="https://radiant-forest-01749.herokuapp.com" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Deployed Site</a>
+                        <a href="https://github.com/lindsaymorris813/burger" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Git Hub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade d-none" id="weather-app" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h2 text-center">OpenWeatherMap API App Homework</h5>
+                    <button type="button" class="close" data-project="weather-app" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body h5">
+                    <img class="img-responsive" src="Assets/Images/weather.png" id="modal-image" style="height: auto;">
+                        <p class="h3"><u>Usage:</u></p>
+                        <p>A Web App using OpenWeatherMap's API to produce current conditions and five day forecasts for
+                            user input city.  Uses local storage to save last search and buttons prepend in sidebar to display recent searches..</p>
+                        <p class="h3"><u>Technologies Used:</u></p>
+                        <li>Bootstrap</li>
+                        <li>OpenWeatherMap API</li>
+                        <li>JQuery</li>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-project="weather-app" id="closeBtn" class="closeBtn btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                    <a href="https://lindsaymorris813.github.io/weatherDashboard/" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Deployed Site</a>
+                        <a href="https://github.com/lindsaymorris813/weatherDashboard" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Git Hub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade d-none" id="work-scheduler" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h2 text-center">Workday Scheduler Homework</h5>
+                    <button type="button" class="close" data-project="work-scheduler" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body h5">
+                    <img class="img-responsive" src="Assets/Images/workDayScheduler.png" id="modal-image" style="height: auto;">
+                    <p class="h3"><u>Usage:</u></p>
+                    <p>A Web App using local storage to store user input tasks. Color of hourly blocks changes depending on past, present, or future realtime status.</p>
+                    <p class="h3"><u>Technologies Used:</u></p>
+                    <li>Bootstrap</li>
+                    <li>JQuery</li>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="closeBtn btn btn-secondary" id="closeBtn" data-project="work-scheduler"
+                        data-dismiss="modal">Close</button>
+                    <a href="https://lindsaymorris813.github.io/workDayScheduler/" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Deployed Site</a>
+                        <a href="https://github.com/lindsaymorris813/workDayScheduler" target="_blank" id="button"
+                        type="button" class="btn btn-primary">Git Hub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--javascript-->
+    <script src="script.js"></script>
+</body>
+
+</html>
